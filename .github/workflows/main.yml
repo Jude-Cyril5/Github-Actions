@@ -4,11 +4,12 @@ on: push
 
 jobs:
   build:
-    run-ons: ubuntu-latest 
+    runs-on: ubuntu-latest 
     
     steps:
-      -users: actions/checkout@v3 
-      -name: Hey sudharsan
-      -run: echo "Hey Welcome Buddy,I am github actions"
+      - name: Checkout code
+        uses: actions/checkout@v3 
+      - name: Hey sudharsan
+        run: echo "Hey Welcome Buddy,I am github actions"
   
   
